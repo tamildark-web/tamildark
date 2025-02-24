@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TamilDark</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">
+      <img src="assets/logo.png" alt="TamilDark Logo">
+    </div>
+    <button class="menu-button" aria-label="Toggle Menu">&#9776;</button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="movies.html">Movies</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Auto Slide Crossfade Container -->
+  <div class="slider-container">
+    <div class="slides">
+      <!-- Slides will be dynamically populated by JavaScript -->
+    </div>
+  </div>
+
+  <!-- Explore Movies Button -->
+  <div class="explore-button-container">
+    <button id="explore-button" class="explore-button">
+      Explore Movies
+    </button>
+    <style>
+      /* Explore Movies Button */
+.explore-button-container {
+text-align: center;
+margin: 20px auto;
+}
+
+.explore-button {
+background: linear-gradient(135deg, #e50914, #ff0000); /* Gradient background */
+color: white;
+border: none;
+padding: 12px 24px;
+font-size: 1.2rem;
+border-radius: 30px; /* Rounded corners */
+cursor: pointer;
+transition: all 0.3s ease;
+box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4); /* Shadow for depth */
+position: relative;
+overflow: hidden;
+}
+
+.explore-button::before {
+content: '';
+position: absolute;
+top: 50%;
+left: 50%;
+width: 300%;
+height: 300%;
+background: rgba(255, 255, 255, 0.1);
+transform: translate(-50%, -50%) rotate(45deg);
+transition: all 0.5s ease;
+z-index: 0;
+}
+
+.explore-button:hover::before {
+width: 0;
+height: 0;
+}
+
+.explore-button span {
+position: relative;
+z-index: 1;
+}
+
+.explore-button:hover {
+transform: translateY(-3px); /* Slight lift on hover */
+box-shadow: 0 6px 20px rgba(229, 9, 20, 0.6); /* Enhanced shadow on hover */
+}
+
+.explore-button:active {
+transform: translateY(0); /* Reset lift on click */
+box-shadow: 0 4px 15px rgba(229, 9, 20, 0.4); /* Reset shadow on click */
+}
+
+/* Loading Animation */
+.loading-animation {
+margin-top: 10px;
+}
+
+.loading-animation img {
+width: 50px;
+height: 50px;
+animation: spin 1s linear infinite; /* Add a spinning animation */
+}
+
+@keyframes spin {
+0% {
+  transform: rotate(0deg);
+}
+100% {
+  transform: rotate(360deg);
+}
+}
+    </style>
+    <div id="loading-animation" class="loading-animation" style="display: none;">
+      <img src="assets/loading.gif" alt="Loading Animation">
+    </div>
+  </div>
+
+  <!-- Spotlight Section -->
+  <section class="spotlight">
+    <h2>Spotlight</h2>
+    <iframe src="https://example-review-website.com" frameborder="0"></iframe>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 TamilDark. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+

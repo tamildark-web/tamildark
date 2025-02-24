@@ -1,0 +1,16 @@
+[
+    {
+      "title": "Movie 1",
+      "poster": "assets/images/poster1.jpg",
+      "releaseDate": "2023-10-01",
+      "rating": 4.5,
+      "description": "This is the description for Movie 1."
+    },
+    {
+      "title": "Movie 2",
+      "poster": "assets/images/poster2.jpg",
+      "releaseDate": "2023-11-01",
+      "rating": 3.8,
+      "description": "This is the description for Movie 2."
+    }
+  ]
